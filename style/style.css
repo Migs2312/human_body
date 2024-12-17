@@ -1,7 +1,14 @@
 @import url(animation.css);
-
 h1, h2, h3{
     margin:0px;
+}
+body{
+    background-image: url("images/background.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    height:98vh;
 }
 
 .sideways{
@@ -25,6 +32,7 @@ h1, h2, h3{
     width:50%;
     padding: 10px;
     text-align: justify;
+    background-color: rgba(255, 255, 255, 0.863);
 }
 
 .test_button{
@@ -35,10 +43,10 @@ h1, h2, h3{
     border: 2px black solid;
     font-size: larger;
     font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.671);
 }
 
 .test_button:hover{
-    border: 2px red solid;
     cursor: pointer;
 }
 
@@ -53,4 +61,27 @@ h1, h2, h3{
 
 .opacity_change {
     animation: opacity_change 0.1s linear;
+}
+
+footer{
+    align-self: end;
+    padding:10px;
+    border-radius: 20px;
+    background-color: rgba(255, 162, 162, 0.753);
+}
+
+#delete {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    transform: scale(1);
+    transition: transform 0.1s;
+}
+
+#delete:hover {
+    transform: scale(1.03);
+}
+
+#delete:active {
+    transform: scale(0.9);
 }
