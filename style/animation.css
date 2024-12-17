@@ -1,0 +1,15 @@
+@keyframes content_change {
+    50% {
+        background-color: black;
+    }
+
+    100% {
+        background-color: white;
+    }
+}
+
+@keyframes opacity_change {
+    100% {
+        opacity: 90%;
+    }
+}
